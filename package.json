@@ -1,0 +1,35 @@
+{
+  "name": "fin-ukus",
+  "version": "1.0.0",
+  "description": "UK US spelling variation detection for FIN NLP",
+  "main": "index.js",
+  "dependencies": {
+    "spelling-variations": "^1.0.4"
+  },
+  "devDependencies": {
+    "finnlp": "^1.0.6"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinNLP/fin-ukus.git"
+  },
+  "keywords": [
+    "UK",
+    "US",
+    "spelling",
+    "variation",
+    "detection",
+    "for",
+    "FIN",
+    "NLP"
+  ],
+  "author": "Alex Corvi <alex@arrayy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FinNLP/fin-ukus/issues"
+  },
+  "homepage": "https://github.com/FinNLP/fin-ukus#readme"
+}
