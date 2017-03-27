@@ -1,16 +1,21 @@
 {
   "name": "fin-ukus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UK US spelling variation detection for FIN NLP",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types":"./dist/types.ts",
   "dependencies": {
-    "spelling-variations": "^1.0.4"
+    "spelling-variations": "^1.0.5"
   },
   "devDependencies": {
-    "finnlp": "^1.0.6"
+    "@types/node": "^7.0.11",
+    "finnlp": "^1.0.28",
+    "spelling-variations": "^1.0.5"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "ts-node test/test.ts",
+    "build":"tsc",
+    "prepublish": "ts-node test/test.ts && tsc"
   },
   "repository": {
     "type": "git",
